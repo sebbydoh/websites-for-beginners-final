@@ -1,12 +1,17 @@
 /*  Universal  */
 
 html {
-    background-color: black;
+    background-color: white;
 }
 
 .link {
     text-decoration: none;
     color: black;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: red;
 }
 
 li {
@@ -17,6 +22,18 @@ li {
 
 ul {
     margin: 5px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+
+}
+p {
+    font-family: 'Merriweather', serif;
+}
+
+form {
+    font-family: 'Merriweather', serif;
 }
 /*  Universal  */
 
@@ -91,15 +108,126 @@ ul {
     float: left;
     margin:5px;
 }
+
+.dotfitness {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.introduction h1 {
+    font-size: 36px;
+}
+
+.introduction p {
+    font-size: 24px;
+}
 /*  Header Ends  */
+
+
+/*  Body Content  */
+.body-content {
+    height: 1500px;
+    width: 90%;
+    background-color: white;
+    margin: 60px  5% 10px;
+}
+
+.hero {
+    height: 500px;
+    background-image: url(../images/final-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.hero-content {
+   	background-color: rgba(0,0,0,0.3);
+	padding: 10px;
+	width: 700px;
+	height: 150px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+.introduction {
+    text-align: center;
+    line-height: 50px;
+}
+
+.columns {
+    padding: 10px;
+    height: 600px;
+    /*position: relative;*/
+}
+
+.column-one {
+    /*position: absolute;*/
+    width: 49%;
+    float: left;
+}
+
+.column-one-image {
+    width: 100%;
+}
+
+.column-two {
+    position: absolute;
+    width: 49%;
+    float: right;
+}
+
+.column-two-image {
+    width: 100%;
+}
+
+
+
+.overlay {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: white;
+}
+
+.container {
+    position: relative;
+    width: 49%;
+}
+
+.container:hover .overlay {
+    opacity: 0.5;
+}
+
+.text {
+    color: black;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+/*  Body Content Ends  */
+
 
 /*  Footer  */
 
 .footer {
-    position: absolute;
+    position: relative;
     bottom:0;
     left:0;
-    height: 200px;
+    height: 250px;
     width: 100%;
     background-color: white;
 }
@@ -108,25 +236,72 @@ ul {
     position: absolute;
     height: 150px;
     width: 100%;
-    background-color: gray;
+    background-color: white;
 }
 
 .subscribe {
     position: absolute;
     top: 25px;
     left: 25px;
-    height: 100px;
+    height: 100%;
     width: 45%;
-    background-color: pink;
+    background-color: white;
+}
+
+.subscribe-text {
+    position: absolute;
+    left: 200px;
+    top:-15px;
+}
+
+.subscribe-input {
+    position: absolute;
+    left: 150px;
+    bottom: 30px;
+}
+
+
+
+.subscribe-button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 400px;
+    bottom: 15px;
+    color:white;
+    background-color: black;
+    border-radius: 25px;
+    border-style: none;
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    font-size: 28px;
+;
 }
 
 .social-media {
     position: absolute;
     top: 25px;
     right: 25px;
-    height: 100px;
+    height: 100%;
     width: 45%;
-    background-color: pink;
+    background-color: white;
+    
+}
+
+.social-media-title {
+    position: absolute;
+    left: 200px;
+    top:-15px;
+}
+
+.social-media-ul {
+    position: absolute;
+    margin: 10px;
+    bottom: 5px;
+}
+
+.social {
+    margin-left: 40px;
 }
 
 .copyright {
